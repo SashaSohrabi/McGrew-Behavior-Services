@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
 
-  @include small-tablet {
+  @include big-tablet {
     display: none;
   }
 }

@@ -1,10 +1,10 @@
 .burger {
-  margin-left: 50%;
+  margin-left: 65%;
   margin-top: -35px;
   display: none;
   text-transform: uppercase;
 
-  @include small-tablet {
+  @include big-tablet {
     display: block;
   }
 }
@@ -80,11 +80,14 @@
   display: block;
   position: relative;
   padding: 15px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   font-weight: 300;
   color: #fff;
   outline: none;
+  @include mobile {
+    font-size: 0.7rem;
+  }
 }
 
 .no-touch .dl-menuwrapper li a:hover {

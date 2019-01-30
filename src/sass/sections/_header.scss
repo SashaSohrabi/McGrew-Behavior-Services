@@ -4,15 +4,13 @@
   justify-content: space-between;
   align-items: center;
 
-  @include small-tablet {
+  @include big-tablet {
     display: initial;
   }
 }
 
 .logo {
-  font-size: 50px;
-
-  @include small-tablet {
+  @include big-tablet {
     margin-top: 40px;
   }
 }
@@ -20,4 +18,10 @@
 .logo__link {
   color: #454646;
   display: flex;
+}
+
+.logo__link--img {
+  @include mobile {
+    width: 70%;
+  }
 }
