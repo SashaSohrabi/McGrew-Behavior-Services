@@ -1,0 +1,106 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.navigation__item {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding: 0 20px;
+}
+
+.navigation__link {
+  color: #454646;
+}
+
+.navigation__link:hover {
+  color: #fff;
+}
+
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #00b5d2;
+  left: 50%;
+  margin-top: 5px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navigation__link:hover::after {
+  width: 60px;
+}
+
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  left: -130px;
+  width: 130px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.third-level-menu > li {
+  height: 40px;
+  font-size: 0.6rem;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 130px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.second-level-menu > li {
+  position: relative;
+  height: 30px;
+  font-size: 0.7rem;
+  margin-top: 20px;
+}
+
+.top-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: right;
+}
+
+.top-level-menu > li {
+  position: relative;
+  float: left;
+  width: 130px;
+}
+
+.top-level-menu li:hover > ul {
+  display: inline;
+  animation: fadeIn 0.3s;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+ {
+  text-decoration: none;
+
+  /* Make the link cover the entire list item-container */
+  display: block;
+  line-height: 30px;
+  transition: all 0.3s;
+}

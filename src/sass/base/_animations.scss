@@ -228,20 +228,3 @@
     opacity: 1;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .header {
-    display: initial;
-  }
-
-  .logo {
-    margin-top: 40px;
-  }
-  .burger {
-    display: block;
-  }
-
-  .navigation {
-    display: none;
-  }
-}
