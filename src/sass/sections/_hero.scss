@@ -1,0 +1,18 @@
+.hero {
+  padding: 180px 0 163px 0;
+  &__title {
+    text-shadow: $shadow;
+  }
+  & .underline::after {
+    bottom: -26px;
+    display: block;
+  }
+  &__text {
+    width: 41%;
+    color: $white;
+    text-shadow: $shadow;
+    font-size: 1.125rem;
+    padding: 3rem 0;
+    line-height: 1.667;
+  }
+}
