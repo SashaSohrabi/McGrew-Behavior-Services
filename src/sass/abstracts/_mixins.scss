@@ -1,0 +1,30 @@
+// === GOOGLE FONTS ===
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+// === MEDIA  QUERIES ===
+@mixin desktop() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-tablet() {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin small-tablet() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}

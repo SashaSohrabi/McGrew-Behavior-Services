@@ -1,13 +1,32 @@
-body {
-    background: green;
-    text-align: center;
-    h1 {
-        color: white;
-        font-size: 50px;
-    }
+@include google-font("Lato:400,400i,700,900");
+:root {
+  font-size: 16px;
 }
 
-div {
-    max-width: 500px;
-    margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  position: relative;
 }
