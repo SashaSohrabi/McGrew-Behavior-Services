@@ -1,0 +1,10 @@
+.support {
+  padding: 100px 0 300px 0;
+  background: $blue url("../images/support__bg.png") 50% 103.5% no-repeat;
+  text-align: center;
+  &__text {
+    color: $white;
+    font-size: 1.125rem;
+    margin-top: 40px;
+  }
+}
