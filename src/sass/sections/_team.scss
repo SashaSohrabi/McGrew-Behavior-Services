@@ -1,0 +1,39 @@
+.team {
+  display: flex;
+  margin: 110px 0 60px 0;
+  background: #367ab7;
+  &__img {
+    width: 50%;
+    align-self: stretch;
+    object-fit: cover;
+  }
+  &__message {
+    padding: 40px 97px 40px 30px;
+    flex: 50%;
+  }
+  &__text {
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.667;
+    text-align: justify;
+    margin: 45px 0;
+    &--cursive {
+      font-style: italic;
+      margin: 0 0 40px 0;
+    }
+  }
+  &__title {
+    text-transform: capitalize;
+    & .underline::after {
+      display: block;
+      bottom: -20px;
+    }
+  }
+  & .button {
+    padding: 23px 27px;
+    background-color: #00b5d2;
+    &::after {
+      background-color: #008ea5;
+    }
+  }
+}
