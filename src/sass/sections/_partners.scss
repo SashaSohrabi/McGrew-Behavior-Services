@@ -1,0 +1,21 @@
+.partners {
+  padding: 25px 0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background-color: #fafafa;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  &__item {
+    width: calc(100% / 6);
+  }
+  &__item:not(:last-of-type) {
+    margin-right: 45px;
+  }
+  &__item img {
+    width: 100%;
+  }
+}
