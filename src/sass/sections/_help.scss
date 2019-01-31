@@ -1,0 +1,17 @@
+.help {
+  padding: 70px 0 100px 0;
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+  &__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #777777;
+  }
+  &__text {
+    color: #444444;
+    font-size: 1.125rem;
+    margin: 45px 0 45px;
+    line-height: 1.667;
+  }
+}
