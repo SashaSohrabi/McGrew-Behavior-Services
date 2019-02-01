@@ -15,3 +15,16 @@
     line-height: 1.667;
   }
 }
+
+.js--wp-3 {
+  opacity: 0;
+}
+
+.js--wp-3.animated {
+  opacity: 1;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}

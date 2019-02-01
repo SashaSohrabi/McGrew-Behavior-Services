@@ -18,3 +18,16 @@
     padding-bottom: 30vw;
   }
 }
+
+.js--wp-1 {
+  opacity: 0;
+}
+
+.js--wp-1.animated {
+  opacity: 1;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
