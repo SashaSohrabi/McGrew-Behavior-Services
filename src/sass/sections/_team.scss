@@ -6,10 +6,18 @@
     width: 50%;
     align-self: stretch;
     object-fit: cover;
+
+    @include small-tablet {
+      display: none;
+    }
   }
   &__message {
     padding: 40px 97px 40px 30px;
     flex: 1;
+
+    @include small-tablet {
+      padding: 40px;
+    }
   }
   &__text {
     color: $white;

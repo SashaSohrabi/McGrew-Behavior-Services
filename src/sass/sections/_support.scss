@@ -7,4 +7,11 @@
     font-size: 1.125rem;
     margin-top: 40px;
   }
+
+  @include big-tablet {
+    background: $blue url("../images/support__bg.png") 50% 103.5% no-repeat;
+    background-size: contain;
+    padding-top: 10vw;
+    padding-bottom: 30vw;
+  }
 }

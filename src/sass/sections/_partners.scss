@@ -8,9 +8,24 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &__item {
     width: calc(100% / 6);
+
+    @include small-tablet {
+      width: 25%;
+      margin: 5px !important;
+    }
+
+    @include mobile {
+      width: 35%;
+      margin: 10px !important;
+    }
   }
   &__item:not(:last-of-type) {
     margin-right: 45px;

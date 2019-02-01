@@ -13,6 +13,9 @@
   @include big-tablet {
     padding-top: 40px;
   }
+  @include mobile {
+    width: 70%;
+  }
 }
 
 .logo__link {
@@ -22,6 +25,6 @@
 
 .logo__link--img {
   @include mobile {
-    width: 70%;
+    width: 100%;
   }
 }
