@@ -81,6 +81,11 @@ a {
   color: $white;
   font-size: 3rem;
   font-weight: 900;
+
+  @include mobile {
+    font-size: 2.2rem;
+    padding: 0 10px;
+  }
 }
 
 .underline {

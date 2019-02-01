@@ -6,6 +6,9 @@
     color: $white;
     font-size: 1.125rem;
     margin-top: 40px;
+    @include mobile {
+      padding: 0 50px;
+    }
   }
 
   @include big-tablet {
