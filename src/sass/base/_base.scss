@@ -55,6 +55,11 @@ a {
   position: relative;
   display: inline-block;
 
+  @include mobile {
+    padding: 18px 60px;
+    font-size: 0.9rem;
+  }
+
   &::after {
     content: "";
     position: absolute;

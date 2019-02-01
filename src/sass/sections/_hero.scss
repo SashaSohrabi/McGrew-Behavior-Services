@@ -15,4 +15,8 @@
     padding: 3rem 0;
     line-height: 1.667;
   }
+
+  @include mobile {
+    padding: 100px 0;
+  }
 }
